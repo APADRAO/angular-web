@@ -1,0 +1,8 @@
+<form [formGroup]="form" (ngSubmit)="gerarArquivo()" >
+<h2 style="text-align: center">NFE Data Sul</h2>
+       <input id="txProcesso" type="text" placeholder="Numero Shipment:" class="form-control" formControlName="txProcesso">
+          
+            <br />
+            <button class="btn btn-success" type="submit"  [disabled]="!form.valid" >Gera Nota</button> 
+            
+</form>

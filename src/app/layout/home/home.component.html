@@ -1,0 +1,25 @@
+<div class="navbar navbar-inverse navbar-fixed-top" style="padding-left: 1%; padding-right: 1%; background-color: black; ">
+    <div class="btn-group" style="float: left; margin-left: 5px; margin-right: 5px">
+        <h4><a runat="server" [routerLink]="['/']" style="color: orangered; margin-right: 5px;">WebIT</a></h4>
+        
+        
+        <select class="form-control" #Select (change)="onSelect(Select.value)"
+        style="background-color: black; color: darkgray; border:0;width: auto;">
+            <option *ngFor="let item of listaGeneral" [value]="item.ref">
+                {{ item.nome }}
+            </option>
+        </select>
+       
+    </div>
+    <div style="background-color: black; height:100%; float: left">
+        <a class="nav-button" (click)="SairClick()">Sair</a>
+    </div>
+</div>
+<section>
+    <main class="container" style="height: 450px;">
+        <router-outlet></router-outlet>
+    </main>
+</section>
+<footer class="mt-2 p-2 text-center">
+    <a href="http://www.dbschenker.com">Schenker</a>
+</footer>

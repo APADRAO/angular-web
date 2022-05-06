@@ -1,0 +1,10 @@
+
+
+.background {
+    background-image: url('./image/background.jpg');
+    background-size: cover;
+    height: 515px;
+    padding: 12%;
+    margin: 1%;
+}
+
