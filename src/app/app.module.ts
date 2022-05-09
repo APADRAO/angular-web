@@ -10,13 +10,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import { NfdatasulComponent } from './nfdatasul/nfdatasul.component';
+import { FolowloteComponent } from './folowlote/folowlote.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    NfdatasulComponent
+    NfdatasulComponent,
+    FolowloteComponent
     
   ],
   imports: [
